@@ -1,9 +1,9 @@
 <aside class="sidebar">
   <div class="sidebar-container">
     <nav>
-      <ul class="nav nav-pills nav-stacked">
-        <li *ngFor="let link of links" class="active">
-          <a href="#">{{ link }}</a>
+      <ul class="nav nav-pills flex-column nav-inverse bg-inverse">
+        <li *ngFor="let link of links" class="nav-item">
+          <a href="#" class="nav-link">{{ link }}</a>
         </li>
       </ul>
     </nav>

@@ -1,9 +1,13 @@
-<nav class="navbar navbar-toggleable-sm navbar-inverse bg-inverse">
-  <button class="navbar-toggler navbar-toggler-right" type="button" (click)="isNavbarCollapsed = !isNavbarCollapsed">
+<span style="display:block; position: absolute; left: 0; top: 0">
+    <a class="navbar-brand" href="#">My App</a>
+</span>
+
+<nav class="navbar navbar-toggleable-sm navbar-inverse bg-inverse navbar-top">
+  <button class="navbar-toggler" type="button" (click)="isNavbarCollapsed = !isNavbarCollapsed">
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <a class="navbar-brand" href="#">My App</a>
+  <!-- <a class="navbar-brand" href="#">My App</a> -->
 
   <div [ngbCollapse]="isNavbarCollapsed" class="collapse navbar-collapse">
     <div class="navbar-nav">
