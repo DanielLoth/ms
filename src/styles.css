@@ -1,1 +1,94 @@
-/* You can add global styles to this file, and also import other style files */
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  min-height: 100%;
+  font-family: 'Open Sans', sans-serif;
+  /* color: #4f5f6f; */
+  overflow-x: hidden;
+}
+
+.main-wrapper {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.app {
+    position: relative;
+    width: 100%;
+    padding-left: 230px;
+    min-height: 100vh;
+    margin: 0 auto;
+    left: 0;
+    /* background-color: #f0f3f6; */
+    -webkit-box-shadow: 0 0 3px #ccc;
+    box-shadow: 0 0 3px #ccc;
+    -webkit-transition: left 0.3s ease, padding-left 0.3s ease;
+    transition: left 0.3s ease, padding-left 0.3s ease;
+    overflow: hidden;
+}
+.app .content {
+    padding: 95px 20px 75px 20px;
+    min-height: 100vh;
+}
+@media (min-width: 1200px) {
+    .app .content {
+        padding: 105px 40px 85px 40px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .app .content {
+        padding: 100px 35px 80px 35px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .app .content {
+        padding: 95px 20px 75px 20px;
+    }
+}
+@media (max-width: 767px) {
+    .app .content {
+        padding: 70px 20px 70px 20px;
+    }
+}
+@media (max-width: 991px) {
+    .app {
+        padding-left: 0;
+    }
+}
+@media (max-width: 991px) {
+    .app.sidebar-open {
+        left: 0;
+    }
+}
+/* .app.blank {
+    background-color: #667380;
+} */
+
+.sidebar {
+    /* background-color: #3a4651; */
+    width: 230px;
+    padding-top: 52px;
+    padding-bottom: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    -webkit-transition: left 0.3s ease;
+    transition: left 0.3s ease;
+    z-index: 20;
+}
+
+.sidebar .sidebar-container {
+    position: relative;
+    top: 0;
+    bottom: 51px;
+    width: 100%;
+    left: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}

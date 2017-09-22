@@ -1,0 +1,24 @@
+{
+    "Metadata": {
+        "Entities": [
+            {
+                "NameSingular": "Person",
+                "NamePlural": "People",
+                "Columns": [
+                    {
+                        "Name": "GivenNames",
+                        "Type": "string"
+                    },
+                    {
+                        "Name": "Surname",
+                        "Type": "string"
+                    },
+                    {
+                        "Name": "DateOfBirth",
+                        "Type": "date"
+                    }
+                ]
+            }
+        ]
+    }
+}

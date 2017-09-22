@@ -1,0 +1,8 @@
+.navbar {
+    z-index: 2000;
+}
+
+.navbar-toggle.navbar-left {
+    float: left;
+    margin-left: 10px;
+  }
