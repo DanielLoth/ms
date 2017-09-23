@@ -11,7 +11,7 @@ export class LeftNavComponent implements OnInit {
 
   constructor() {
     for (let i = 0; i < 30; i++) {
-      this.links.push("link " + i);
+      this.links.push('link ' + i);
     }
   }
 
